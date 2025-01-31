@@ -17,7 +17,6 @@ async function run() {
 
     let element = document.getElementById("mainHeader")
     let innerHTML = await getData()
-    console.log(innerHTML)
     element.innerHTML = innerHTML
 }
 
