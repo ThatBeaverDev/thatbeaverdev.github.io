@@ -18,6 +18,9 @@ async function run() {
     let element = document.getElementById("mainHeader")
     let innerHTML = await getData()
     element.innerHTML = innerHTML
+
+    const title = document.getElementsByClassName("title")
+    title[0].innerText = window.location.host
 }
 
 run()
